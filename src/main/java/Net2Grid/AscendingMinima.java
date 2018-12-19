@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 /**
  * This class is used as the implementation of the ascending minimum algorithm. For documentation about the algorithm,
- * visit the following link <url>https://softwarelearner.blogspot.com/2011/04/minima-in-sliding-window.html</url>
+ * visit the following link <url>https://softwarelearner.blogspot.com/2011/04/minima-in-sliding-window.html</url>.
  *
  * @author Angelos Vasileiadis
  * @version 1.00, Date: 18.12.2018
@@ -28,15 +28,14 @@ public class AscendingMinima {
     private ArrayList<Integer> myIndexes;
 
     /**
-     * This variable is used to store the ascending minima ArrayList<Double>
+     * This variable is used to store the ascending minima ArrayList<Double>.
      */
     private ArrayList<Double> ama;
 
     /**
-     * This variable is an auxiliary list of Integers, that stores the indexes of the ascendig minima array
+     * This variable is an auxiliary list of Integers, that stores the indexes of the ascendig minima array.
      */
     private ArrayList<Integer> ama_index;
-
     /**
      * This is the void constructor of the class. It is used for initialization purposes. If an instance is created
      * through this constructor, it it obsolete for setMyData() method to be called by the user in the future.
@@ -127,8 +126,8 @@ public class AscendingMinima {
     }
 
     /**
-     * This is the setter method for myData List variable, in case the inputData is of type double[]
-     * @param inputData is the input double[] to store to myDataArrayList
+     * This is the setter method for myData List variable, in case the inputData is of type double[].
+     * @param inputData is the input double[] to store to myDataArrayList.
      */
     public void setMyData(double[] inputData)
     {
@@ -144,8 +143,8 @@ public class AscendingMinima {
     }
 
     /**
-     ** This is the second setter method for myData List variable, in case the inputData is of type List<Double>
-     * @param inputData is the input List to store to myData ArrayList
+     ** This is the second setter method for myData List variable, in case the inputData is of type List<Double>.
+     * @param inputData is the input List to store to myData ArrayList.
      */
     public void setMyData(ArrayList<Double> inputData)
     {
@@ -161,32 +160,32 @@ public class AscendingMinima {
     }
 
     /**
-     * This is the getter method for newValue variable
-     * @return the newValue variable
+     * This is the getter method for newValue variable.
+     * @return the newValue variable.
      */
     public Double getNewValue() {
         return newValue;
     }
 
     /**
-     * This is the getter method for myData List variable
-     * @return the myData variable
+     * This is the getter method for myData List variable.
+     * @return the myData variable.
      */
     public ArrayList<Double> getMyData() {
         return myData;
     }
 
     /**
-     * This is the getter method for myIndexes List variable
-     * @return the myIndexes variable
+     * This is the getter method for myIndexes List variable.
+     * @return the myIndexes variable.
      */
     public ArrayList<Integer> getMyIndexes() {
         return myIndexes;
     }
 
     /**
-     * This is the getter method of the variable List<Double> ama variable
-     * @return the variable ama, which holds the ascening minima arraylist
+     * This is the getter method of the variable List<Double> ama variable.
+     * @return the variable ama, which holds the ascening minima arraylist.
      */
     public ArrayList<Double> getAma()
     {
@@ -194,7 +193,7 @@ public class AscendingMinima {
     }
 
     /**
-     * This is the getter method for ama_index List variable
+     * This is the getter method for ama_index List variable.
      * @return
      */
     public ArrayList<Integer> getAma_index() {
@@ -202,7 +201,7 @@ public class AscendingMinima {
     }
 
     /**
-     * This method is used to print out to the console the current content of ArrayList ama
+     * This method is used to print out to the console the current content of ArrayList ama.
      */
     public void show_ama()
     {
@@ -211,7 +210,7 @@ public class AscendingMinima {
     }
 
     /**
-     * This method is used to compute the ascending minima array of a given array. It is called only once, through the constructor of the class
+     * This method is used to compute the ascending minima array of a given array. It is called only once, through the constructor of the class.
      */
     public void computeAscendingMinimaFistTime()
     {
@@ -254,7 +253,7 @@ public class AscendingMinima {
     }
 
     /**
-     * This method is used to compute the ascending minima array if a newValue variable is inserted into the initial matrix
+     * This method is used to compute the ascending minima array if a newValue variable is inserted into the initial array.
      */
     public void computeAscendingMinima()
     {

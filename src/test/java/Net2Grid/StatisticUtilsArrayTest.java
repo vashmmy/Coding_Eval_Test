@@ -149,7 +149,7 @@ public class StatisticUtilsArrayTest
     }
 
     /**
-     * This method is used for testing the getter method for the inputData variable of StatisticUtilsArray class
+     * This method is used for testing the getter method for the inputData variable of StatisticUtilsArray class.
      */
     @Test
     public void getInputData()
@@ -179,7 +179,7 @@ public class StatisticUtilsArrayTest
 
     /**
      * This method is used for testing the getter method for the inputData variable of StatisticUtilsArray class.
-     * Should throw NullPointerException
+     * Should throw NullPointerException.
      */
     @Test(expected = NullPointerException.class)
     public void getInputDataWhenInputIsVoid()
@@ -190,7 +190,7 @@ public class StatisticUtilsArrayTest
 
     /**
      * This method is used for testing the getter method for the getStats variable of StatisticUtilsArray class.
-     * Should throw NullPointerException
+     * Should throw NullPointerException.
      */
     @Test(expected = NullPointerException.class)
     public void getStatsWhenInputIsVoid()
@@ -199,9 +199,9 @@ public class StatisticUtilsArrayTest
         myClassGetStatsWhenInputIsVoid.getInputData();
     }
 
-    /**This method is used to assign null to all variables that were declare in the setUp() method
+    /**This method is used to assign null to all variables that were declare in the setUp() method.
      *
-     * @throws Exception if it is not properly deleted
+     * @throws Exception if it is not properly deleted.
      */
     @After
     public void tearDown() throws Exception

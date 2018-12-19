@@ -100,7 +100,7 @@ public class StatisticUtilsArrayListTest
 
     /**
      * This method is used for testing the behaviour of the StatisticUtilsArrayList class in case a void ArrayList<Double> is given as an input.
-     * Should throw IllegalArgumentException
+     * Should throw IllegalArgumentException.
      */
     @Test(expected = IllegalArgumentException.class)
     public void ifVoidInputIsGivenThrowException()
@@ -111,7 +111,7 @@ public class StatisticUtilsArrayListTest
 
     /**
      * This method is used for testing the behaviour of the StatisticUtilsArrayList class in case a void array is given as an input.
-     * Should throw NullPointerException
+     * Should throw NullPointerException.
      */
     @Test(expected = NullPointerException.class)
     public void ifNullInputIsGivenThrowException()
@@ -133,7 +133,7 @@ public class StatisticUtilsArrayListTest
 
     /**
      * This method is used for testing the getter method for the getStats variable of StatisticUtilsArrayList class.
-     * Should throw NullPointerException
+     * Should throw NullPointerException.
      */
     @Test(expected = NullPointerException.class)
     public void testGetStatsWhenInputIsVoid()
@@ -233,9 +233,9 @@ public class StatisticUtilsArrayListTest
         assertEquals(myClass.getStats().getStandardDeviation(), tempResult.getStandardDeviation(), tolerance);
     }
 
-    /**This method is used to assign null to all variables that were declare in the setUp() method
+    /**This method is used to assign null to all variables that were declare in the setUp() method.
      *
-     * @throws Exception if it is not properly deleted
+     * @throws Exception if it is not properly deleted.
      */
     @After
     public  void tearDown() throws Exception

@@ -14,7 +14,7 @@ import java.util.ArrayList;
 public class StatisticUtilsArrayList
 {
     /**
-     * This variable is responsible for storing the values of the given ArrayList<Double> to an array of type double[]
+     * This variable is responsible for storing the values of the given ArrayList<Double> to an array of type double[].
      */
     private double[] inputData;
 
@@ -30,7 +30,7 @@ public class StatisticUtilsArrayList
 
     /**
      * This is the main constructor method of the class, used for initialization purposes. It takes the given ArrayList<Double>as an
-     * input, transforms the ArrayList<Double> to double[], stores in the variable inputData and creates the variable stats
+     * input, transforms the ArrayList<Double> to double[], stores in the variable inputData and creates the variable stats.
      *
      * @param inputData The ArrayList of the given data to compute the metrics.
      */
@@ -58,9 +58,9 @@ public class StatisticUtilsArrayList
     }
 
     /**
-     * This is the getter method for the inputData variable
+     * This is the getter method for the inputData variable.
      *
-     * @return the inputData variable
+     * @return the inputData variable.
      */
     public double[] getInputData()
     {
@@ -73,17 +73,17 @@ public class StatisticUtilsArrayList
     }
 
     /**
-     * This is the setter method for the inputData variable
+     * This is the setter method for the inputData variable.
      *
-     * @param inputData The double[] array to be assinged to inputData variable
+     * @param inputData The double[] array to be assinged to inputData variable.
      */
     public void setInputData(double[] inputData) {
         this.inputData = inputData;
     }
 
     /**
-     * This is a second (overloaded) setter method for inputData variable, in case the new Data are given in ArrayList<Double> format
-     * @param inputData The ArrayList<Double> to be assigned to inputData variable
+     * This is a second (overloaded) setter method for inputData variable, in case the new Data are given in ArrayList<Double> format.
+     * @param inputData The ArrayList<Double> to be assigned to inputData variable.
      */
     public void setInputData(ArrayList<Double> inputData)
     {
@@ -96,9 +96,9 @@ public class StatisticUtilsArrayList
     }
 
     /**
-     * This is the getter method for the stats variable
+     * This is the getter method for the stats variable.
      *
-     * @return The stats variable instance
+     * @return The stats variable instance.
      */
     public DescriptiveStatistics getStats()
     {
@@ -111,23 +111,23 @@ public class StatisticUtilsArrayList
     }
 
     /**
-     * This is the setter method for the stats variable
+     * This is the setter method for the stats variable.
      *
-     * @param stats The DescriptiveStatistics instance to be assigned to the stats variable
+     * @param stats The DescriptiveStatistics instance to be assigned to the stats variable.
      */
     public void setStats(DescriptiveStatistics stats) { this.stats = stats; }
 
     /**
-     * This is the method to find the minimum of the given ArrayList
+     * This is the method to find the minimum of the given ArrayList.
      *
-     * @return The minimum value of the given ArrayList
+     * @return The minimum value of the given ArrayList.
      */
     public double findMin() { return stats.getMin(); }
 
     /**
-     * This is the method to find the maximum of the given ArrayList
+     * This is the method to find the maximum of the given ArrayList.
      *
-     * @return The maximum value of the given ArrayList
+     * @return The maximum value of the given ArrayList.
      */
     public double findMax()
     {
@@ -135,9 +135,9 @@ public class StatisticUtilsArrayList
     }
 
     /**
-     * This is the method to find the mean of the given ArrayList
+     * This is the method to find the mean of the given ArrayList.
      *
-     * @return The mean value of the given ArrayList
+     * @return The mean value of the given ArrayList.
      */
     public double findMean()
     {
@@ -145,9 +145,9 @@ public class StatisticUtilsArrayList
     }
 
     /**
-     * This is the method to find the median of the given ArrayList
+     * This is the method to find the median of the given ArrayList.
      *
-     * @return The median value of the given ArrayList
+     * @return The median value of the given ArrayList.
      */
     public double findMedian()
     {
@@ -155,9 +155,9 @@ public class StatisticUtilsArrayList
     }
 
     /**
-     * This is the method to find the standard deviation of the given ArrayList
+     * This is the method to find the standard deviation of the given ArrayList.
      *
-     * @return The standard deviation value of the given ArrayList
+     * @return The standard deviation value of the given ArrayList.
      */
     public double findStd()
     {

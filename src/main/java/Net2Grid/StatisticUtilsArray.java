@@ -12,7 +12,7 @@ import org.apache.commons.math3.stat.descriptive.DescriptiveStatistics;
 public class StatisticUtilsArray
 {
     /**
-     * This variable is responsible for storing the values of the given array of doubles, to an array of type double[]
+     * This variable is responsible for storing the values of the given array of doubles, to an array of type double[].
      */
     private double[] inputData;
 
@@ -28,7 +28,7 @@ public class StatisticUtilsArray
 
     /**
      * This is the main constructor method of the class, used for initialization purposes. It takes the given array of doubles as an
-     * input, stores it the variable inputData and creates the variable stats
+     * input, stores it the variable inputData and creates the variable stats.
      *
      * @param inputData The array  of the given data to compute the metrics.
      */
@@ -53,9 +53,9 @@ public class StatisticUtilsArray
     }
 
     /**
-     * This is the getter method for the inputData variable
+     * This is the getter method for the inputData variable.
      *
-     * @return the inputData variable
+     * @return the inputData variable.
      */
     public double[] getInputData()
     {
@@ -68,16 +68,16 @@ public class StatisticUtilsArray
     }
 
     /**
-     * This is the setter method for the inputData variable
+     * This is the setter method for the inputData variable.
      *
-     * @param inputData The double[] array to be assinged to inputData variable
+     * @param inputData The double[] array to be assinged to inputData variable.
      */
     public void setInputData(double[] inputData) { this.inputData = inputData; }
 
     /**
-     * This is the getter method for the stats variable
+     * This is the getter method for the stats variable.
      *
-     * @return The stats variable instance
+     * @return The stats variable instance.
      */
     public DescriptiveStatistics getStats()
     {
@@ -90,16 +90,16 @@ public class StatisticUtilsArray
     }
 
     /**
-     * This is the setter method for the stats variable
+     * This is the setter method for the stats variable.
      *
-     * @param stats The DescriptiveStatistics instance to be assigned to the stats variable
+     * @param stats The DescriptiveStatistics instance to be assigned to the stats variable.
      */
     public void setStats(DescriptiveStatistics stats) { this.stats = stats; }
 
     /**
-     * This is the method to find the minimum of the given array of doubles
+     * This is the method to find the minimum of the given array of doubles.
      *
-     * @return The minimum value of the given array of doubles
+     * @return The minimum value of the given array of doubles.
      */
     public double findMin()
     {
@@ -107,9 +107,9 @@ public class StatisticUtilsArray
     }
 
     /**
-     * This is the method to find the maximum of the given array of doubles
+     * This is the method to find the maximum of the given array of doubles.
      *
-     * @return The maximum value of the given array of doubles
+     * @return The maximum value of the given array of doubles.
      */
     public double findMax()
     {
@@ -117,9 +117,9 @@ public class StatisticUtilsArray
     }
 
     /**
-     * This is the method to find the mean of the given array of doubles
+     * This is the method to find the mean of the given array of doubles.
      *
-     * @return The mean value of the given array of doubles
+     * @return The mean value of the given array of doubles.
      */
     public double findMean()
     {
@@ -127,9 +127,9 @@ public class StatisticUtilsArray
     }
 
     /**
-     * This is the method to find the median of the given array of doubles
+     * This is the method to find the median of the given array of doubles.
      *
-     * @return The median value of the given array of doubles
+     * @return The median value of the given array of doubles.
      */
     public double findMedian()
     {
@@ -137,9 +137,9 @@ public class StatisticUtilsArray
     }
 
     /**
-     * This is the method to find the standard deviation of the given array of doubles
+     * This is the method to find the standard deviation of the given array of doubles.
      *
-     * @return The standard deviation value of the given array of doubles
+     * @return The standard deviation value of the given array of doubles.
      */
     public double findStd()
     {
