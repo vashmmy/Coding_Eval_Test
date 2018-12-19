@@ -35,15 +35,14 @@ public class AscendingMinimaTest
     public void setUp()
     {
 
-        // The initializatonArray and initializationArrayList contain the same values, in different data types. In most test methods,
-        // we check that objects instanciated by each of them work right.
-        // They are used as arguments to instanciate two objects.
+        /* The initializatonArray and initializationArrayList contain the same values, in different data types. In most test methods,
+           we check that objects instanciated by each of them work right. They are used as arguments to instanciate two objects. */
         initializationArray = new double[]{9,1,1,3,4,2,6,8,9};
         initializationArrayList = new ArrayList<>(); for(double element: initializationArray){ initializationArrayList.add(element); }
 
-        // The auxiliary variables testArray and testArrayList are used as "control" array and arraylist.
-        // They contain the same values. Knowing their contents and their expected outputs, we can check
-        // whether the methods's responses are correct or not.
+        /* The auxiliary variables testArray and testArrayList are used as "control" array and arraylist.
+           They contain the same values. Knowing their contents and their expected outputs, we can check
+           whether the methods's responses are correct or not. */
         testArray= new double[]{1,2,3,4,5,6,7,8,9};
         testArrayList = new ArrayList<>(); for(double element: testArray){ testArrayList.add(element); }
 
@@ -145,8 +144,8 @@ public class AscendingMinimaTest
     public void getMyData()
     {
 
-        // We check if the returned arraylist is equal to the same arraylist that was used during the initilization
-        // of the myClassArrayInput and myClassArrayListInput instances
+        /* We check if the returned arraylist is equal to the same arraylist that was used during the initilization
+           of the myClassArrayInput and myClassArrayListInput instances */
 
         // Firstly test myClassArrayInput instance
         assertEquals(myClassArrayInput.getMyData(), initializationArrayList);
@@ -229,8 +228,8 @@ public class AscendingMinimaTest
     public void computeAscendingMinimaFistTime()
     {
 
-        // To check if computeAscendingMinimaFirstTime is functioning right, we just need to call getAma() after
-        // initializing with a known array and assertingEqual with a its corresponind ama array
+        /* To check if computeAscendingMinimaFirstTime is functioning right, we just need to call getAma() after
+           initializing with a known array and assertingEqual with a its corresponind ama array */
 
         // Firstly test myClassArrayInput instance
         assertEquals(myClassArrayInput.getAma(), testAma);
@@ -246,9 +245,9 @@ public class AscendingMinimaTest
     public void computeAscendingMinima()
     {
 
-        // To check if if computeAscendingMinima() is functioning right, we need to call getAma() after initialing with
-        // a knwon array, calling setNewValue and getAma(), and assertingEqual with is its correct corresponding ama array,
-        // which is already known
+        /* To check if if computeAscendingMinima() is functioning right, we need to call getAma() after initialing with
+           a known array, calling setNewValue and getAma(), and assertingEqual with is its correct corresponding ama array,
+           which is already known */
 
         // Create the value to be imported to the initial array
         double newValue = 6.0;

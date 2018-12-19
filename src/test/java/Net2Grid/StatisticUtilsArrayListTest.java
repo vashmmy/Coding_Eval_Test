@@ -152,8 +152,10 @@ public class StatisticUtilsArrayListTest
         // first check that the result of the getter and the newly created array tempResult are not the same
         double[] tempResult = new double[]{1,2,3,4,5};
         assertNotEquals(myClass.getInputData(), tempResult);
+
         // call the setter to refresh the stats variable with the new array argument
         myClass.setInputData(tempResult);
+
         //check that the new inputData variable was succesfully returned. Can safely assume that the setter method works correctly
         assertArrayEquals(myClass.getInputData(), tempResult);
     }
@@ -164,8 +166,8 @@ public class StatisticUtilsArrayListTest
     @Test
     public void setInputDataOverloaded()
     {
-        // first check that the result of the getter and the newly created array tempResult are not the same
-        // tempArray and tempArrayList have the same contents.
+        /* first check that the result of the getter and the newly created array tempResult are not the same
+           tempArray and tempArrayList have the same contents. */
         ArrayList<Double> tempArrayList = new ArrayList<>();
         tempArrayList.add((double)1); tempArrayList.add((double)2); tempArrayList.add((double)3); tempArrayList.add((double)4); tempArrayList.add((double)5);
         double[] tempArray = new double[5];
@@ -173,8 +175,10 @@ public class StatisticUtilsArrayListTest
             tempArray[i] = tempArrayList.get(i);
         }
         assertNotEquals(myClass.getInputData(), tempArray);
+
         // call the setter to refresh the stats variable with the new ArrayList<Double> argument
         myClass.setInputData(tempArrayList);
+
         //check that the new inputData variable was succesfully returned. Can safely assume that the setter method works correctly
         assertArrayEquals(myClass.getInputData(), tempArray);
     }
@@ -204,8 +208,8 @@ public class StatisticUtilsArrayListTest
     public void getInputData()
     {
 
-        // We expect the result of the getter and the new array to be equal, cause myClass instance was created with the same array.
-        // tempArray and tempArrayList have the same contents.
+        /* We expect the result of the getter and the new array to be equal, cause myClass instance was created with the same array.
+           tempArray and tempArrayList have the same contents. */
         ArrayList<Double> tempArrayList = new ArrayList<>();
         for (int i=1; i<11;i++){tempArrayList.add((double)i);}
         double[] tempArray = new double[10];
@@ -222,9 +226,9 @@ public class StatisticUtilsArrayListTest
     public void getStats()
     {
 
-        // We create the an DescriptiveStatistics instance with the same argument as the myClass object
-        // knowing that StatisticUtilsArray internally creates a DescriptiveStatistics instance with the same args,
-        // and we expect the newly created instance's metrics to be equal to the instance's returned from the getter getStats() method metrics
+        /* We create the an DescriptiveStatistics instance with the same argument as the myClass object
+           knowing that StatisticUtilsArray internally creates a DescriptiveStatistics instance with the same args,
+           and we expect the newly created instance's metrics to be equal to the instance's returned from the getter getStats() method metrics */
         DescriptiveStatistics tempResult = new DescriptiveStatistics(new double[]{1,2,3,4,5,6,7,8,9,10});
         assertEquals(myClass.getStats().getMin(), tempResult.getMin(), tolerance);
         assertEquals(myClass.getStats().getMax(), tempResult.getMax(), tolerance);

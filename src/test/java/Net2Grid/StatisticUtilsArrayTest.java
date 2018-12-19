@@ -166,9 +166,10 @@ public class StatisticUtilsArrayTest
     public void getStats()
     {
 
-        // We create the an DescriptiveStatistics instance with the same argument as the myClass object
-        // knowing that StatisticUtilsArray internally creates a DescriptiveStatistics instance with the same args,
-        // and we expect the newly created instance's metrics to be equal to the instance's returned from the getter getStats() method metrics
+        /* We create the an DescriptiveStatistics instance with the same argument as the myClass object
+           knowing that StatisticUtilsArray internally creates a DescriptiveStatistics instance with the same args,
+           and we expect the newly created instance's metrics to be equal to the instance's returned from the getter
+            getStats() method metrics. */
         DescriptiveStatistics tempResult = new DescriptiveStatistics(new double[]{1,2,3,4,5,6,7,8,9,10});
         assertEquals(myClass.getStats().getMin(), tempResult.getMin(), tolerance);
         assertEquals(myClass.getStats().getMax(), tempResult.getMax(), tolerance);
@@ -199,7 +200,7 @@ public class StatisticUtilsArrayTest
         myClassGetStatsWhenInputIsVoid.getInputData();
     }
 
-    /**This method is used to assign null to all variables that were declare in the setUp() method.
+    /**This method is used to assign null to all variables that were declared in the setUp() method.
      *
      * @throws Exception if it is not properly deleted.
      */

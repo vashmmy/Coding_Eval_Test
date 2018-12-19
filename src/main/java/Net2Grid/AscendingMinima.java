@@ -215,12 +215,12 @@ public class AscendingMinima {
     public void computeAscendingMinimaFistTime()
     {
 
-        // This auxiliary variable stores the minimum value of the subarray under examination. It is of type double(not Double),
-        // for better manipulation of for and while loops.
+        /* This auxiliary variable stores the minimum value of the subarray under examination. It is of type double(not Double),
+           for better manipulation of for and while loops. */
         double min = myData.get(0);
 
-        // This auxiliary variable stores the index of the minimum value of the subarray under examination. It is of type int(not Integer),
-        // for better manipulation of for and while loops.
+        /* This auxiliary variable stores the index of the minimum value of the subarray under examination. It is of type int(not Integer),
+           for better manipulation of for and while loops. */
         int min_index = 0;
 
          // This is a counter variable.
@@ -258,15 +258,15 @@ public class AscendingMinima {
     public void computeAscendingMinima()
     {
 
-        // If the element that you discard is the first element in the ascending minima and their indexes match
-        // get rid of that element from the ascending minima.
+        /* If the element that you discard is the first element in the ascending minima and their indexes match
+           get rid of that element from the ascending minima. */
         if ( ( ama.get(0)== myData.get(0) ) && ( ama_index.get(0) == myIndexes.get(0) ) ){
             ama.remove(0);
             ama_index.remove(0);
         }
 
-        // Search from the end of the ascending minima discarding all elements that are >= newValue .
-        // If you find a element < Value, stop and add the newValue into ama. Update its corresponding index matrix(ama_index).
+        /* Search from the end of the ascending minima discarding all elements that are >= newValue .
+           If you find a element < Value, stop and add the newValue into ama. Update its corresponding index matrix(ama_index). */
         for (int i = ama.size()-1; i >= 0 ; i--){
             if (ama.get(i) >= newValue ){
                 ama.remove(i);
@@ -278,8 +278,9 @@ public class AscendingMinima {
             }
         }
 
-        // The following line of code will be executed only in the marginal case where all elements of ama were bigger than newValue.
-        // Then, the ama array was left empty, and we only insert the newValue with its index(the value of the last element of myIndexes arraylist).
+        /* The following line of code will be executed only in the marginal case where all elements of ama were bigger
+           than newValue. Then, the ama array was left empty, and we only insert the newValue with its index
+           (the value of the last element of myIndexes arraylist). */
         if (ama.isEmpty()){
             ama.add(newValue);
             ama_index.add(myIndexes.get(myIndexes.size()-1) +1 );
