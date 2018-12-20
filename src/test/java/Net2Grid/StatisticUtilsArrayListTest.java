@@ -94,7 +94,7 @@ public class StatisticUtilsArrayListTest
     {
         result =myClass.findStd();
         resultZero = myClassZero.findStd();
-        assertEquals(3.02765, result, 0.001);
+        assertEquals(3.027650354097, result, tolerance);
         assertEquals(0, resultZero);
     }
 
@@ -151,13 +151,13 @@ public class StatisticUtilsArrayListTest
 
         // first check that the result of the getter and the newly created array tempResult are not the same
         double[] tempResult = new double[]{1,2,3,4,5};
-        assertNotEquals(myClass.getInputData(), tempResult);
+        assertNotEquals(tempResult, myClass.getInputData());
 
         // call the setter to refresh the stats variable with the new array argument
         myClass.setInputData(tempResult);
 
         //check that the new inputData variable was succesfully returned. Can safely assume that the setter method works correctly
-        assertArrayEquals(myClass.getInputData(), tempResult);
+        assertArrayEquals(tempResult, myClass.getInputData());
     }
 
     /**
@@ -174,13 +174,13 @@ public class StatisticUtilsArrayListTest
         for (int i=0;i<tempArrayList.size();i++){
             tempArray[i] = tempArrayList.get(i);
         }
-        assertNotEquals(myClass.getInputData(), tempArray);
+        assertNotEquals(tempArray, myClass.getInputData());
 
         // call the setter to refresh the stats variable with the new ArrayList<Double> argument
         myClass.setInputData(tempArrayList);
 
         //check that the new inputData variable was succesfully returned. Can safely assume that the setter method works correctly
-        assertArrayEquals(myClass.getInputData(), tempArray);
+        assertArrayEquals(tempArray, myClass.getInputData());
     }
 
     /**
@@ -192,13 +192,13 @@ public class StatisticUtilsArrayListTest
 
         // First check that the result of the getter and the newly created instance tempResult are not the same
         DescriptiveStatistics tempResult = new DescriptiveStatistics(new double[]{1,2,3,4,5});
-        assertNotEquals(myClass.getStats(), tempResult);
+        assertNotEquals(tempResult, myClass.getStats());
 
         // Call the setter to refresh the stats variable with the new argument
         myClass.setStats(tempResult);
 
         // Check that the new stats variable was succesfully returned. Can safely assume that the setter method works correctly
-        assertEquals(myClass.getStats(), tempResult);
+        assertEquals(tempResult, myClass.getStats());
     }
 
     /**
@@ -216,7 +216,7 @@ public class StatisticUtilsArrayListTest
         for (int i=0;i<tempArrayList.size();i++){
             tempArray[i] = tempArrayList.get(i);
         }
-        assertArrayEquals(myClass.getInputData(), tempArray);
+        assertArrayEquals(tempArray, myClass.getInputData());
     }
 
     /**
@@ -230,11 +230,11 @@ public class StatisticUtilsArrayListTest
            knowing that StatisticUtilsArray internally creates a DescriptiveStatistics instance with the same args,
            and we expect the newly created instance's metrics to be equal to the instance's returned from the getter getStats() method metrics */
         DescriptiveStatistics tempResult = new DescriptiveStatistics(new double[]{1,2,3,4,5,6,7,8,9,10});
-        assertEquals(myClass.getStats().getMin(), tempResult.getMin(), tolerance);
-        assertEquals(myClass.getStats().getMax(), tempResult.getMax(), tolerance);
-        assertEquals(myClass.getStats().getMean(), tempResult.getMean(), tolerance);
-        assertEquals(myClass.getStats().getPercentile(50), tempResult.getPercentile(50), tolerance);
-        assertEquals(myClass.getStats().getStandardDeviation(), tempResult.getStandardDeviation(), tolerance);
+        assertEquals(tempResult.getMin(), myClass.getStats().getMin(), tolerance);
+        assertEquals(tempResult.getMax(), myClass.getStats().getMax(), tolerance);
+        assertEquals(tempResult.getMean(), myClass.getStats().getMean(), tolerance);
+        assertEquals(tempResult.getPercentile(50), myClass.getStats().getPercentile(50), tolerance);
+        assertEquals(tempResult.getStandardDeviation(), myClass.getStats().getStandardDeviation(), tolerance);
     }
 
     /**This method is used to assign null to all variables that were declare in the setUp() method.

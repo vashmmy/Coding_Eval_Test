@@ -5,6 +5,7 @@ import org.junit.Before;
 import org.junit.After;
 import org.junit.Test;
 import java.util.ArrayList;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
@@ -72,11 +73,11 @@ public class AscendingMinimaTest
 
         // Firstly test myClassArrayInput instance
         myClassArrayInput.setNewValue(tempValue);
-        assertEquals(myClassArrayInput.getNewValue(), tempValue, tolerance);
+        assertEquals(tempValue, myClassArrayInput.getNewValue(), tolerance);
 
         // Secondly test myClassArrayListInput instance
         myClassArrayListInput.setNewValue(tempValue);
-        assertEquals(myClassArrayListInput.getNewValue(), tempValue, tolerance);
+        assertEquals(tempValue, myClassArrayListInput.getNewValue(), tolerance);
     }
 
     /**
@@ -93,11 +94,11 @@ public class AscendingMinimaTest
 
         // Firstly test myClassArrayInput instance
         myClassArrayInput.setMyData(testArray);
-        assertArrayEquals(myClassArrayInput.getMyData().toArray(), tempArray);
+        assertArrayEquals(tempArray, myClassArrayInput.getMyData().toArray());
 
         // Secondly test myClassArrayListInput instance
         myClassArrayListInput.setMyData(testArray);
-        assertArrayEquals(myClassArrayListInput.getMyData().toArray(), tempArray);
+        assertArrayEquals(tempArray, myClassArrayListInput.getMyData().toArray());
     }
     /**
      * This method is used for testing the setter method for the myData variable of AscendingMinima class,
@@ -110,11 +111,11 @@ public class AscendingMinimaTest
 
         // Firstly test myClassArrayInput instance
         myClassArrayInput.setMyData(testArrayList);
-        assertEquals(myClassArrayInput.getMyData(), testArrayList);
+        assertEquals(testArrayList, myClassArrayInput.getMyData());
 
         // Secondly test myClassArrayLintInput instance
         myClassArrayListInput.setMyData(testArrayList);
-        assertEquals(myClassArrayListInput.getMyData(), testArrayList);
+        assertEquals(testArrayList, myClassArrayListInput.getMyData());
     }
 
     /**
@@ -130,11 +131,11 @@ public class AscendingMinimaTest
 
         // Firstly test myClassArrayInput instance
         myClassArrayInput.setNewValue(tempValue);
-        assertEquals(myClassArrayInput.getNewValue(), tempValue, tolerance);
+        assertEquals(tempValue, myClassArrayInput.getNewValue(), tolerance);
 
         // Secondly test myClassArrayListInput instance
         myClassArrayListInput.setNewValue(tempValue);
-        assertEquals(myClassArrayListInput.getNewValue(), tempValue, tolerance);
+        assertEquals(tempValue, myClassArrayListInput.getNewValue(), tolerance);
     }
 
     /**
@@ -148,10 +149,10 @@ public class AscendingMinimaTest
            of the myClassArrayInput and myClassArrayListInput instances */
 
         // Firstly test myClassArrayInput instance
-        assertEquals(myClassArrayInput.getMyData(), initializationArrayList);
+        assertEquals(initializationArrayList, myClassArrayInput.getMyData());
 
         // Secondly test myClassArrayLintInput instance
-        assertEquals(myClassArrayListInput.getMyData(), initializationArrayList);
+        assertEquals(initializationArrayList, myClassArrayListInput.getMyData());
     }
 
     /**
@@ -166,10 +167,10 @@ public class AscendingMinimaTest
         for (int i = 0 ; i < myClassArrayInput.getMyData().size(); i++ ){ tempIndexList.add(i);}
 
         // Firstly test myClassArrayInput instance
-        assertEquals(myClassArrayInput.getMyIndexes(), tempIndexList);
+        assertEquals(tempIndexList, myClassArrayInput.getMyIndexes());
 
         // Secondly test myClassArrayLintInput instance
-        assertEquals(myClassArrayListInput.getMyIndexes(), tempIndexList);
+        assertEquals(tempIndexList, myClassArrayListInput.getMyIndexes());
     }
 
     /**
@@ -180,10 +181,10 @@ public class AscendingMinimaTest
     {
 
         // Firstly test myClassArrayInput instance
-        assertEquals(myClassArrayInput.getAma(), testAma);
+        assertEquals(testAma, myClassArrayInput.getAma());
 
         // Secondly test myClassArrayListInput instance
-        assertEquals(myClassArrayListInput.getAma(), testAma);
+        assertEquals(testAma, myClassArrayListInput.getAma());
     }
 
     /**
@@ -194,10 +195,10 @@ public class AscendingMinimaTest
     {
 
         // Firstly test myClassArrayInput instance
-        assertEquals(myClassArrayInput.getAma_index(), testAma_index);
+        assertEquals(testAma_index, myClassArrayInput.getAma_index());
 
         // Secondly test myClassArrayListInput instance
-        assertEquals(myClassArrayListInput.getAma_index(), testAma_index);
+        assertEquals(testAma_index, myClassArrayListInput.getAma_index());
     }
 
     /**
@@ -232,10 +233,10 @@ public class AscendingMinimaTest
            initializing with a known array and assertingEqual with a its corresponind ama array */
 
         // Firstly test myClassArrayInput instance
-        assertEquals(myClassArrayInput.getAma(), testAma);
+        assertEquals(testAma, myClassArrayInput.getAma());
 
         // Secondly test myClassArrayListInput instance
-        assertEquals(myClassArrayListInput.getAma(), testAma);
+        assertEquals(testAma, myClassArrayListInput.getAma());
     }
 
     /**
@@ -257,11 +258,11 @@ public class AscendingMinimaTest
 
         // Firstly test myClassArrayInput instance
         myClassArrayInput.setNewValue(newValue);
-        assertEquals(myClassArrayInput.getAma(), shouldBeThisAma);
+        assertEquals(shouldBeThisAma, myClassArrayInput.getAma());
 
         // Secondly test myClassArrayListInput instance
         myClassArrayListInput.setNewValue(newValue);
-        assertEquals(myClassArrayListInput.getAma(), shouldBeThisAma);
+        assertEquals(shouldBeThisAma, myClassArrayListInput.getAma());
     }
 
     /**This method is used to assign null to all variables that were declare in the setUp() method.
