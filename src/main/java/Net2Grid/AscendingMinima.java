@@ -62,11 +62,6 @@ public class AscendingMinima {
             throw new IllegalArgumentException("Input Array Is Void");
         }
 
-        // If the argument ArrayList is null, throw NullPointerException
-        if (inputData == null){
-            throw new NullPointerException("Input Array Is Null");
-        }
-
         // Store inputData to myData and initialize the private variables
         myData = new ArrayList<>(inputData);
         myIndexes = new ArrayList<>();
@@ -92,11 +87,6 @@ public class AscendingMinima {
         // If the argument ArrayList is void, throw IllegalArgumentException
         if (inputData.length == 0){
             throw new IllegalArgumentException("Input Array Is Void");
-        }
-
-        // If the argument ArrayList is null, throw NullPointerException
-        if (inputData == null){
-            throw new NullPointerException("Input Array Is Null");
         }
 
         // Initialize the private variables

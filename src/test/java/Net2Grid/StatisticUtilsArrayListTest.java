@@ -110,17 +110,6 @@ public class StatisticUtilsArrayListTest
     }
 
     /**
-     * This method is used for testing the behaviour of the StatisticUtilsArrayList class in case a void array is given as an input.
-     * Should throw NullPointerException.
-     */
-    @Test(expected = NullPointerException.class)
-    public void ifNullInputIsGivenThrowException()
-    {
-        ArrayList<Double> nullInput = null;
-        StatisticUtilsArrayList myClassNull = new StatisticUtilsArrayList(nullInput);
-    }
-
-    /**
      * This method is used for testing the getter method for the inputData variable of StatisticUtilsArrayList class.
      * Should throw NullPointerException
      */

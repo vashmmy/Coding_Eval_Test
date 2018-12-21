@@ -102,17 +102,6 @@ public class StatisticUtilsArrayTest
     }
 
     /**
-     * This method is used for testing the behaviour of the StatisticUtilsArray class in case a null array is given as an input.
-     * Should throw NullPointerException
-     */
-    @Test(expected = NullPointerException.class)
-    public void ifNullInputIsGivenThrowException()
-    {
-        double[] nullInput = null;
-        StatisticUtilsArray myClassNull = new StatisticUtilsArray(nullInput);
-    }
-
-    /**
      * This method is used for testing the setter method for the inputData variable of StatisticUtilsArray class.
      */
     @Test

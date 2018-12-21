@@ -35,11 +35,6 @@ public class StatisticUtilsArrayJS {
             throw new IllegalArgumentException("Input Array Is Void");
         }
 
-        // Check if input is null
-        if (inputData == null){
-            throw new NullPointerException("Input Array Is Null");
-        }
-
         // Store the argument into the variable input
         this.inputData = inputData;
     }

@@ -212,17 +212,6 @@ public class AscendingMinimaTest
     }
 
     /**
-     * This method is used for testing the behaviour of the AscendingMinima class in case a void array is given as an input.
-     * Should throw NullPointerException.
-     */
-    @Test(expected = NullPointerException.class)
-    public void ifNullInputIsGivenThrowException()
-    {
-        double[] nullInput = null;
-        AscendingMinima myClassNull = new AscendingMinima(nullInput);
-    }
-
-    /**
      * This method is used for testing the computeAscendingMinimaFirst()Time method of AscendingMinima class.
      */
     @Test

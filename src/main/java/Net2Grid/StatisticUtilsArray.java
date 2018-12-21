@@ -43,11 +43,6 @@ public class StatisticUtilsArray
             throw new IllegalArgumentException("Input Array Is Void");
         }
 
-        // Check if input is null
-        if (inputData == null){
-            throw new NullPointerException("Input Array Is Null");
-        }
-
         // Get a DescriptiveStatistics instance
         stats = new DescriptiveStatistics(this.inputData);
     }

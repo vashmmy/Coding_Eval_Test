@@ -52,7 +52,7 @@ public class StatisticUtilsArrayJSTest {
     public void getInputData() {
 
         // We expect the result of the getter and the new array to be equal, cause myClass instance was created with the same array.
-        assertArrayEquals(new double[]{1,2,3,4,5,6,7,8,9,10}, myClass.getInputData());
+        assertArrayEquals(inputData, myClass.getInputData());
     }
 
     /**
@@ -106,17 +106,6 @@ public class StatisticUtilsArrayJSTest {
     }
 
     /**
-     * This method is used for testing the behaviour of the StatisticUtilsArray class in case a null array is given as an input.
-     * Should throw NullPointerException
-     */
-    @Test(expected = NullPointerException.class)
-    public void ifNullInputIsGivenThrowException()
-    {
-        double[] nullInput = null;
-        StatisticUtilsArrayJS myClassNull = new StatisticUtilsArrayJS(nullInput);
-    }
-
-    /**
      * This method is used for testing the getter method for the inputData variable of StatisticUtilsArray class.
      * Should throw NullPointerException.
      */
@@ -132,7 +121,8 @@ public class StatisticUtilsArrayJSTest {
      * @throws Exception if it is not properly deleted.
      */
     @After
-    public void tearDown(){
+    public void tearDown() throws Exception{
         inputData = null;
+        myClass = null;
     }
 }

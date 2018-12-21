@@ -42,11 +42,6 @@ public class StatisticUtilsArrayList
             throw new IllegalArgumentException("Input Array Is Void");
         }
 
-        // If the argument ArrayList is null, throw IllegalArgumentException
-        if (inputData == null){
-            throw new NullPointerException("Input Array Is Null");
-        }
-
         // Initialize the private variable inputData and store in it, the contents of the given ArrayList
         this.inputData = new double[inputData.size()];
         for (int i=0;i<inputData.size();i++){
