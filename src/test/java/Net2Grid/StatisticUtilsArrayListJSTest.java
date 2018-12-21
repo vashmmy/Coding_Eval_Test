@@ -36,7 +36,7 @@ public class StatisticUtilsArrayListJSTest {
     }
 
     /**
-     * This method is used for testing the getter method for the stats variable of StatisticUtilsArrayListJS class.
+     * This method is used for testing the getter method for the inputData variable of StatisticUtilsArrayListJS class.
      */
     @Test
     public void getInputData() {
@@ -46,12 +46,12 @@ public class StatisticUtilsArrayListJSTest {
     }
 
     /**
-     * This method is used for testing the setter method for the stats variable of StatisticUtilsArrayListJS class.
+     * This method is used for testing the setter method for the inputData variable of StatisticUtilsArrayListJS class.
      */
     @Test
     public void setInputData() {
 
-        // First check that the result of the getter and the newly created arraylist tempResult are not the same
+        // First check that the result of the getter and the newly created arraylist tempResult, are not the same
         ArrayList<Double> tempResult = new ArrayList<>();
         tempResult.add(1.0);
         tempResult.add(2.0);
@@ -98,12 +98,11 @@ public class StatisticUtilsArrayListJSTest {
     public void findStandardDeviation() { assertEquals( 3.027650354097, myClass.findStandardDeviation() , tolerance); }
 
     /**
-     * This method is used for testing the behaviour of the StatisticUtilsArrayListJS class in case a void array is given as an input.
+     * This method is used for testing the behaviour of the StatisticUtilsArrayListJS class in case a void arraylist is given as an input.
      * Should throw IllegalArgumentException
      */
     @Test(expected = IllegalArgumentException.class)
-    public void ifVoidInputIsGivenThrowException()
-    {
+    public void ifVoidInputIsGivenThrowException() {
         StatisticUtilsArrayListJS myClassVoid = new StatisticUtilsArrayListJS(new ArrayList< >());
     }
 
@@ -112,8 +111,7 @@ public class StatisticUtilsArrayListJSTest {
      * Should throw NullPointerException.
      */
     @Test(expected = NullPointerException.class)
-    public void getInputDataWhenInputIsVoid()
-    {
+    public void getInputDataWhenInputIsVoid() {
         StatisticUtilsArrayListJS myClassGetInputDataWhenInputIsVoid = new StatisticUtilsArrayListJS();
         myClassGetInputDataWhenInputIsVoid.getInputData();
     }
