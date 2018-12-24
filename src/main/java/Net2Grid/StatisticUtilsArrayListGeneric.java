@@ -11,8 +11,6 @@ public class StatisticUtilsArrayListGeneric< N extends Number> {
 
     public StatisticUtilsArrayListGeneric(ArrayList < N > inputData){
 
-        super();
-
         // If the argument ArrayList is void, throw IllegalArgumentException
         if (inputData.size() == 0){
             throw new IllegalArgumentException("Input Array Is Void");

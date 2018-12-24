@@ -36,6 +36,7 @@ public class AscendingMinima {
      * This variable is an auxiliary list of Integers, that stores the indexes of the ascendig minima array.
      */
     private ArrayList<Integer> ama_index;
+
     /**
      * This is the void constructor of the class. It is used for initialization purposes. If an instance is created
      * through this constructor, it it obsolete for setMyData() method to be called by the user in the future.
@@ -116,7 +117,7 @@ public class AscendingMinima {
     }
 
     /**
-     * This is the setter method for myData List variable, in case the inputData is of type double[].
+     * This is the setter method for myData ArrayList variable, in case the inputData is of type double[].
      * @param inputData is the input double[] to store to myDataArrayList.
      */
     public void setMyData(double[] inputData)
@@ -133,7 +134,7 @@ public class AscendingMinima {
     }
 
     /**
-     ** This is the second setter method for myData List variable, in case the inputData is of type List<Double>.
+     ** This is the second setter method for myData ArrayList variable, in case the inputData is of type List<Double>.
      * @param inputData is the input List to store to myData ArrayList.
      */
     public void setMyData(ArrayList<Double> inputData)
@@ -158,7 +159,7 @@ public class AscendingMinima {
     }
 
     /**
-     * This is the getter method for myData List variable.
+     * This is the getter method for myData ArrayList variable.
      * @return the myData variable.
      */
     public ArrayList<Double> getMyData() {
@@ -166,7 +167,7 @@ public class AscendingMinima {
     }
 
     /**
-     * This is the getter method for myIndexes List variable.
+     * This is the getter method for myIndexes ArrayList variable.
      * @return the myIndexes variable.
      */
     public ArrayList<Integer> getMyIndexes() {
@@ -174,7 +175,7 @@ public class AscendingMinima {
     }
 
     /**
-     * This is the getter method of the variable List<Double> ama variable.
+     * This is the getter method of the variable ArrayList<Double> ama variable.
      * @return the variable ama, which holds the ascening minima arraylist.
      */
     public ArrayList<Double> getAma()
@@ -183,7 +184,7 @@ public class AscendingMinima {
     }
 
     /**
-     * This is the getter method for ama_index List variable.
+     * This is the getter method for ama_index ArrayList variable.
      * @return
      */
     public ArrayList<Integer> getAma_index() {
